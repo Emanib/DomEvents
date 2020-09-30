@@ -1,0 +1,74 @@
+body {
+  background-color: #def9fc;
+}
+
+.container {
+  margin: 100px auto;
+  width: 500px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: #666666;
+  font-family: futura;
+  font-size: 17px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.tab {
+  margin-right: 2px;
+}
+
+.tab button {
+  background: #f8f1fb;
+  width: 80px;
+  padding: 10px;
+  color: #7c7c7c;
+  border: 1px solid #f8f1fb;
+  border-radius: 15px;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab.active button {
+  background:  #f3e4fa;;
+}
+
+.tab button::before {
+  content: " ";
+  display: block;
+  width: 82px;
+  height: 39px;
+  border-radius: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tab button:hover {
+  background-color: #ff3db53d;
+}
+
+.content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #fcfafd;
+  border-radius: 15px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.content.active {
+  display: block;
+}
+
+h1 {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 20px;
+  margin-bottom: 35px;
+  text-align: center;
+}
